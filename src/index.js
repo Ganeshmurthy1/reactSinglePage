@@ -5,3 +5,7 @@ import "./index.css";
 
 //ReactDOM.render( <Main/>,   document.getElementById("root"));
 ReactDOM.render( <Main/>,   document.getElementById("root"));
+
+// setTimeout(()=>{
+//     ReactDOM.unmountComponentAtNode( document.getElementById("root"));
+// },10000)

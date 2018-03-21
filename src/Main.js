@@ -4,6 +4,8 @@ import Home from './Home';
 import Stuff from './Stuff';
 import Contact from './Contact';
 import ComponentLifeCycle from './ComponentLifeCycle';
+import FormsMethod from './FormsMethod';
+import KeyValuePair from './KeyValuePair';
  
 class Main extends Component {
   render() {
@@ -49,6 +51,9 @@ render(){
               <li><NavLink to="/stuff">ComponentApi</NavLink></li>
               <li><NavLink to="/componentLifeCycle">Component-LifeCycle</NavLink></li>
              <li><NavLink to="/contact">Contact</NavLink></li>
+             <li><NavLink to="/forms">Forms</NavLink></li>
+             <li><NavLink to="/keyValue">key Value</NavLink></li>
+             
           </ul>
         </div>
         </HashRouter>
@@ -65,6 +70,9 @@ class Content extends Component{
                   <Route path="/stuff" component={Stuff}/>
                   <Route path="/componentLifeCycle" component={ComponentLifeCycle}/>
                   <Route path="/contact" component={Contact}/>
+                  <Route path="/forms" component={FormsMethod}/>
+                  <Route path="/keyValue" component={KeyValuePair}/>
+                  
               </div>
               </HashRouter>
         )
