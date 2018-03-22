@@ -6,7 +6,7 @@ import Contact from './Contact';
 import ComponentLifeCycle from './ComponentLifeCycle';
 import FormsMethod from './FormsMethod';
 import KeyValuePair from './KeyValuePair';
- 
+import TableRes from './TableRes'; 
 class Main extends Component {
   render() {
     return (
@@ -53,6 +53,7 @@ render(){
              <li><NavLink to="/contact">Contact</NavLink></li>
              <li><NavLink to="/forms">Forms</NavLink></li>
              <li><NavLink to="/keyValue">key Value</NavLink></li>
+             <li><NavLink to="/TableRes">TableRes Value</NavLink></li>
              
           </ul>
         </div>
@@ -72,6 +73,8 @@ class Content extends Component{
                   <Route path="/contact" component={Contact}/>
                   <Route path="/forms" component={FormsMethod}/>
                   <Route path="/keyValue" component={KeyValuePair}/>
+                  <Route path="/TableRes" component={TableRes}/>
+                 
                   
               </div>
               </HashRouter>

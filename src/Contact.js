@@ -1,6 +1,6 @@
 import React, { Component } from "react";
- 
- 
+
+
 class Contact extends Component {
     constructor() {
                   super();
@@ -38,8 +38,8 @@ class Contact extends Component {
                     .then((response) => response.json())
                     .then((responseJson) => {
                       console.log('responseJson',responseJson);
-                       localStorage.setItem('state', 'off');
-                      window.location.href= "/#/TableResponse";
+                       localStorage.setItem('movieData', JSON.stringify(responseJson));
+                      this.props.history.push('/TableRes')
                       //return responseJson.movies;
                     })
                     .catch((error) => {
